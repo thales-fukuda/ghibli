@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const Year = styled.span`
   margin: 0;
-  font-size: 26px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
   color: #747D8C;
 `;
 

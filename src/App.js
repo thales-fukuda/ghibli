@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Api from './Api';
 
-import Movie from './blocks/Movie';
+import Page from './containers/Page';
 
 class App extends Component {
-  state = { movies: [] }
+  state = { movies: [] };
 
   componentDidMount = async () => {
     const response = await this.load();
@@ -26,17 +26,7 @@ class App extends Component {
 
   render() {
     const { movies } = this.state;
-    return (
-      <>
-        {movies.map(item => (
-          <Movie key={item.id}>
-            <Movie.Year>{item.release_date}</Movie.Year>
-            <Movie.Title color='#FF4757'>{item.title}</Movie.Title>
-            <Movie.Text>{item.description}</Movie.Text>
-          </Movie>
-        ))}
-      </>
-    );
+    return (<Page data={movies} />);
   }
 }
 
