@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const MenuButton = styled.button`
-  position: absolute;
+  padding: 0;
 `;
 
 export default MenuButton;
