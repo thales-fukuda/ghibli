@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Image from './Image';
 
 const Home = styled.section`
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
