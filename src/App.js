@@ -13,7 +13,6 @@ class App extends Component {
         movies: response.data,
       });
     }
-    console.log(this.state.movies);
   };
 
   load = async () => {

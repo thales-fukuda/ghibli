@@ -6,10 +6,10 @@ import Container from './Container';
 // Blocks
 import Header from '../../blocks/Header';
 import Home from '../../blocks/Home';
+import Menu from '../../blocks/Menu';
 import Movie from '../../blocks/Movie';
 
 // Elements
-
 import Title from '../../elements/Title';
 import Text from '../../elements/Text';
 
@@ -26,7 +26,12 @@ class Page extends Component {
     }));
   };
 
+  goToMovie = (movie) => {
+    console.log(movie);
+  }
+
   render() {
+    const { menuStatus } = this.state;
     const { data } = this.props;
     return (
       <Container>
@@ -35,15 +40,27 @@ class Page extends Component {
             <Header.Icon src={icMenu} alt='menu' onClick={this.toggleMenu} />
           </Header.MenuButton>
         </Header>
+        <Menu className={menuStatus ? 'active' : ''}>
+          {data.map(item => (
+            <Menu.Element key={`el${item.id}`} onClick={() => this.goToMovie(item.id)}>{item.title}</Menu.Element>
+          ))}
+        </Menu>
         <Home>
           <Home.Image src={GhibliLogo} />
         </Home>
         <Title>What is Studio Ghibli</Title>
-        <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in convallis massa, ac eleifend nisl. Maecenas mauris nunc, faucibus convallis sapien vitae, mattis rutrum nisl. Vestibulum rhoncus nunc sit amet semper elementum. Donec laoreet dui nulla, nec ultrices velit luctus in. Fusce venenatis, velit ut iaculis iaculis, mi urna venenatis lacus, eget vehicula ante nunc non enim. Nulla vitae quam id est varius interdum id in nibh. Suspendisse a interdum turpis.</Text>
+        <Text>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in convallis massa, ac
+         eleifend nisl. Maecenas mauris nunc, faucibus convallis sapien vitae, mattis rutrum nisl.
+        Vestibulum rhoncus nunc sit amet semper elementum. Donec laoreet dui nulla, nec ultrices
+         velit luctus in. Fusce venenatis, velit ut iaculis iaculis, mi urna venenatis lacus,
+         eget vehicula ante nunc non enim. Nulla vitae quam id est varius interdum id in nibh.
+         Suspendisse a interdum turpis.
+        </Text>
         {data.map(item => (
-          <Movie key={item.id}>
+          <Movie key={item.id} id={item.id}>
             <Movie.Year>{item.release_date}</Movie.Year>
-            <Movie.Title color='#FF4757'>{item.title}</Movie.Title>
+            <Movie.Title>{item.title}</Movie.Title>
             <Movie.Text>{item.description}</Movie.Text>
           </Movie>
         ))}
