@@ -17,6 +17,9 @@ import Text from '../../elements/Text';
 import GhibliLogo from '../../assets/images/logo.svg';
 import icMenu from '../../assets/icons/menu.svg';
 
+// Movies image list
+import movies_list from '../../movies_list';
+
 class Page extends Component {
   state = { menuStatus: false };
 
@@ -31,7 +34,7 @@ class Page extends Component {
     movieElement.scrollIntoView({block: 'start'});
     window.scrollBy(0, '-70');
     this.toggleMenu();
-  }
+  };
 
   render() {
     const { menuStatus } = this.state;
@@ -60,8 +63,9 @@ class Page extends Component {
          eget vehicula ante nunc non enim. Nulla vitae quam id est varius interdum id in nibh.
          Suspendisse a interdum turpis.
         </Text>
-        {data.map(item => (
+        {data.map((item, i)=> (
           <Movie key={item.id} id={item.id}>
+            <Movie.Image src={movies_list[i].image}/>
             <Movie.Year>{item.release_date}</Movie.Year>
             <Movie.Title>{item.title}</Movie.Title>
             <Movie.Text>{item.description}</Movie.Text>

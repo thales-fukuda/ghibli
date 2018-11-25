@@ -11,6 +11,7 @@ const Header = styled.header`
   background-color: #F1F2F6;
   display: flex;
   align-items: center;
+  left: 0;
 `;
 
 Header.Icon = Icon;

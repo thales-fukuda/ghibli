@@ -1,6 +1,8 @@
-const PATH = './assets/images/movies';
 
-const movies = [
+
+const PATH = '/movies/';
+
+const movies_list = [
     { image: `${PATH}/castle_in_the_sky.jpg` },
     { image: `${PATH}/grave_of_the_fireflies.png` },
     { image: `${PATH}/totoro.jpg` },
@@ -21,6 +23,6 @@ const movies = [
     { image: `${PATH}/the_wind_rises.jpg` },
     { image: `${PATH}/princess_kaguya.jpg` },
     { image: `${PATH}/marnie.jpg` },
-]
+];
 
-export default movies;
+export default movies_list;
