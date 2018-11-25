@@ -1,5 +1,3 @@
-
-
 const PATH = '/movies/';
 
 const movies_list = [
