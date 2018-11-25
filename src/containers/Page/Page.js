@@ -27,7 +27,10 @@ class Page extends Component {
   };
 
   goToMovie = (movie) => {
-    console.log(movie);
+    const movieElement = document.getElementById(movie)
+    movieElement.scrollIntoView({block: 'start'});
+    window.scrollBy(0, '-70');
+    this.toggleMenu();
   }
 
   render() {
