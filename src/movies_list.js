@@ -1,4 +1,4 @@
-const PATH = '/movies/';
+const PATH = '/movies';
 
 const movies_list = [
     { image: `${PATH}/castle_in_the_sky.jpg` },
