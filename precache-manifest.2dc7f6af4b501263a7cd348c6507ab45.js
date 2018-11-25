@@ -12,15 +12,15 @@ self.__precacheManifest = [
     "url": "/ghibli/static/js/runtime~main.cb76a81e.js"
   },
   {
-    "revision": "9e431ee64edc49deb672",
-    "url": "/ghibli/static/js/main.9e431ee6.chunk.js"
+    "revision": "6a5205dd6a1b53e117e3",
+    "url": "/ghibli/static/js/main.6a5205dd.chunk.js"
   },
   {
     "revision": "c534aaca9b02bece24e9",
     "url": "/ghibli/static/js/1.c534aaca.chunk.js"
   },
   {
-    "revision": "9723d7c7da665e371c38690caea7803d",
+    "revision": "917096010d4cf3ded9604f678bf0307f",
     "url": "/ghibli/index.html"
   }
 ];

@@ -1,6 +1,6 @@
 {
-  "main.js": "/ghibli/static/js/main.9e431ee6.chunk.js",
-  "main.js.map": "/ghibli/static/js/main.9e431ee6.chunk.js.map",
+  "main.js": "/ghibli/static/js/main.6a5205dd.chunk.js",
+  "main.js.map": "/ghibli/static/js/main.6a5205dd.chunk.js.map",
   "static/js/1.c534aaca.chunk.js": "/ghibli/static/js/1.c534aaca.chunk.js",
   "static/js/1.c534aaca.chunk.js.map": "/ghibli/static/js/1.c534aaca.chunk.js.map",
   "runtime~main.js": "/ghibli/static/js/runtime~main.cb76a81e.js",
@@ -8,6 +8,6 @@
   "static/media/logo.svg": "/ghibli/static/media/logo.7a2a1c26.svg",
   "static/media/menu.svg": "/ghibli/static/media/menu.6fd817ae.svg",
   "index.html": "/ghibli/index.html",
-  "precache-manifest.7cf828fe99be95c80a672a584b5806e9.js": "/ghibli/precache-manifest.7cf828fe99be95c80a672a584b5806e9.js",
+  "precache-manifest.2dc7f6af4b501263a7cd348c6507ab45.js": "/ghibli/precache-manifest.2dc7f6af4b501263a7cd348c6507ab45.js",
   "service-worker.js": "/ghibli/service-worker.js"
 }
