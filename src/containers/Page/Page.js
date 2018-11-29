@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import Container from './Container';
+import CloseMenu from './CloseMenu';
 
 // Blocks
 import Header from '../../blocks/Header';
@@ -51,6 +52,7 @@ class Page extends Component {
             <Menu.Element key={`el${item.id}`} onClick={() => this.goToMovie(item.id)}>{item.title}</Menu.Element>
           ))}
         </Menu>
+        {this.state.menuStatus && <CloseMenu onClick={this.toggleMenu}/>}
         <Home>
           <Home.Image src={GhibliLogo} />
         </Home>

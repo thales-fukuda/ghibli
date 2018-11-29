@@ -16,6 +16,7 @@ const Menu = styled.nav`
   transition: .3s ease transform;
   &.active{
     transform: translate3d(0, 0, 0);
+    z-index: 3;
   }
 `;
 
