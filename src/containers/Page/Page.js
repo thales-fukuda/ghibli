@@ -52,7 +52,7 @@ class Page extends Component {
             <Menu.Element key={`el${item.id}`} onClick={() => this.goToMovie(item.id)}>{item.title}</Menu.Element>
           ))}
         </Menu>
-        {this.state.menuStatus && <CloseMenu onClick={this.toggleMenu}/>}
+        { this.state.menuStatus && <CloseMenu onClick={this.toggleMenu}/> }
         <Home>
           <Home.Image src={GhibliLogo} />
         </Home>
